@@ -1,4 +1,4 @@
-#Báo cáo bài tập lớn môn lập trình nâng cao - INT2215_1
+## Báo cáo bài tập lớn môn lập trình nâng cao - INT2215_1
 - Họ và tên: Chu Quang Tú
 - MSSV: 21020393
 - Tựa game: Zombie shooter
