@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="zombie2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/zombie2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/zombie2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="TextureHolder.cpp" />
+		<Unit filename="bullet.cpp" />
+		<Unit filename="createBgr.cpp" />
+		<Unit filename="createHorde.cpp" />
+		<Unit filename="header/TextureHolder.h" />
+		<Unit filename="header/bullet.h" />
+		<Unit filename="header/createBgr.h" />
+		<Unit filename="header/pickup.h" />
+		<Unit filename="header/player.h" />
+		<Unit filename="header/sound.h" />
+		<Unit filename="header/text.h" />
+		<Unit filename="header/zombie.h" />
+		<Unit filename="main-sfml.cpp" />
+		<Unit filename="pickup.cpp" />
+		<Unit filename="player.cpp" />
+		<Unit filename="sound.cpp" />
+		<Unit filename="text.cpp" />
+		<Unit filename="zombie.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

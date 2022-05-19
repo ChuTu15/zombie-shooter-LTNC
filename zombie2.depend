@@ -1,0 +1,136 @@
+# depslib dependency file v1.0
+1650728824 source:d:\zombie2\main-sfml.cpp
+	<SFML/Graphics.hpp>
+	"header/player.h"
+	"header/createBgr.h"
+	"header/TextureHolder.h"
+
+1649860331 d:\zombie2\header\player.h
+	<SFML/Graphics.hpp>
+	<cmath>
+	<ctime>
+
+1649860059 source:d:\zombie2\player.cpp
+	"header/player.h"
+
+1650726438 d:\zombie2\header\createbgr.h
+	"zombie.h"
+
+1649863604 source:d:\zombie2\createbgr.cpp
+	<SFML/Graphics.hpp>
+	"header/createBgr.h"
+
+1650381600 source:d:\zombie2\textureholder.cpp
+	"header/TextureHolder.h"
+	<assert.h>
+
+1650466901 d:\zombie2\header\textureholder.h
+	<SFML/Graphics.hpp>
+	<map>
+
+1650726173 source:d:\zombie2\zombie.cpp
+	"header/zombie.h"
+	"header/TextureHolder.h"
+	<ctime>
+	<cstdlib>
+	<cmath>
+
+1650726022 d:\zombie2\header\zombie.h
+	<SFML/Graphics.hpp>
+
+1650728482 source:d:\zombie2\createhorde.cpp
+	"header/createBgr.h"
+	"header/zombie.h"
+
+1649863604 source:c:\users\chu quang tu\desktop\zombie-arena\createbgr.cpp
+	<SFML/Graphics.hpp>
+	"header/createBgr.h"
+
+1650726438 c:\users\chu quang tu\desktop\zombie-arena\header\createbgr.h
+	"zombie.h"
+
+1652627367 c:\users\chu quang tu\desktop\zombie-arena\header\zombie.h
+	<SFML/Graphics.hpp>
+
+1651510729 source:c:\users\chu quang tu\desktop\zombie-arena\createhorde.cpp
+	"header/createBgr.h"
+	"header/zombie.h"
+
+1652938780 source:c:\users\chu quang tu\desktop\zombie-arena\main-sfml.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+	<unistd.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"header/player.h"
+	"header/createBgr.h"
+	"header/TextureHolder.h"
+	"header/bullet.h"
+	"header/pickup.h"
+	"header/sound.h"
+	"header/text.h"
+
+1650812323 c:\users\chu quang tu\desktop\zombie-arena\header\player.h
+	<SFML/Graphics.hpp>
+	<cmath>
+	<ctime>
+
+1650812411 c:\users\chu quang tu\desktop\zombie-arena\header\textureholder.h
+	<SFML/Graphics.hpp>
+	<map>
+
+1652346989 source:c:\users\chu quang tu\desktop\zombie-arena\player.cpp
+	"header/player.h"
+	"header/TextureHolder.h"
+
+1650812411 source:c:\users\chu quang tu\desktop\zombie-arena\textureholder.cpp
+	"header/TextureHolder.h"
+	<assert.h>
+
+1651676129 source:c:\users\chu quang tu\desktop\zombie-arena\zombie.cpp
+	"header/zombie.h"
+	"header/TextureHolder.h"
+	<ctime>
+	<cstdlib>
+	<cmath>
+
+1652092354 source:c:\users\chu quang tu\desktop\zombie-arena\bullet.cpp
+	"header/bullet.h"
+
+1650882673 c:\users\chu quang tu\desktop\zombie-arena\header\bullet.h
+	<SFML/Graphics.hpp>
+
+1651512028 source:c:\users\chu quang tu\desktop\zombie-arena\pickup.cpp
+	"header/pickup.h"
+	"header/TextureHolder.h"
+	<iostream>
+
+1651420702 c:\users\chu quang tu\desktop\zombie-arena\header\pickup.h
+	<SFML/Graphics.hpp>
+
+1652808815 c:\users\chu quang tu\desktop\zombie-arena\header\leveling.h
+	"SFML/Graphics.hpp"
+
+1652811306 source:c:\users\chu quang tu\desktop\zombie-arena\leveling.cpp
+	"header/leveling.h"
+	"header/bullet.h"
+	"header/pickup.h"
+	"header/player.h"
+	<iostream>
+
+1652936781 source:c:\users\chu quang tu\desktop\zombie-arena\sound.cpp
+	"header/sound.h"
+
+1652937654 c:\users\chu quang tu\desktop\zombie-arena\header\sound.h
+	"SFML/Audio.hpp"
+	<iostream>
+
+1652938450 source:c:\users\chu quang tu\desktop\zombie-arena\text.cpp
+	"header/text.h"
+
+1652938448 c:\users\chu quang tu\desktop\zombie-arena\header\text.h
+	"SFML/Graphics.hpp"
+	<sstream>
+	<iostream>
+
