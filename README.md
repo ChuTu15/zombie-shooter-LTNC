@@ -52,7 +52,7 @@ Ngoài ra còn vận dụng chia file và quản lí các file cpp, file header.
 
 ## 5. Kết luận, hướng phát triển tựa game trong tương lai.
 ### Kết luận
-Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản tuy nhiên giao diện vẫn chưa hoàn thiện, phần menu vẫn chưa được đẹp.
+Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản tuy nhiên giao diện vẫn chưa hoàn thiện, phần menu vẫn chưa được đẹp sẽ cần phải cải thiện thêm.
 ### Hướng phát triển trong tương lai
 - Bổ sung thêm hệ thống menu trông đẹp hơn, dùng chuột để lựa chọn.
 - Thêm chế độ nhiều người chơi để anh em vào càn quét zombie.
@@ -61,4 +61,4 @@ Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản
 - Thêm skin cho nhân vật đẹp hơn.
 - ...
 ### Những điều tâm đắc
-Qua quá trình suy nghĩ ý tưởng, tìm tòi tài liệu, bắt tay vào làm và hoàn thiện project, em đã củng cố và học hỏi thêm về cách sử dụng các thư viện, cách sử dụng hàm, biến trong C++, biết phân chia, quản lí các file của project. 
+Trong quá trình làm tựa game này, em đã củng cố được việc sử dụng các thư viện, các hàm và biến trong C++, biết phân chia và quản lý các file header, cpp trong một project. Em cũng đã biết thêm việc kết hợp các thư viện, hàm của một ngôn ngữ thành một chương trình hoàn thiện, qua đó nhận thấy rằng ngôn ngữ lập trình cũng như là một thứ tiếng vậy, không phải chỉ biết rõ các từ là có thể giao tiếp được mà chúng ta cần phải biết kết hợp các từ riêng lẻ đó thành một câu hoàn chỉnh thì mới có thể giao tiếp với những người khác được. Ngoài ra em cũng đã xem rất nhiều video hướng dẫn, đọc các tài liệu, qua đó củng cố được vốn từ tiếng Anh của mình 😀😀
