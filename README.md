@@ -28,12 +28,12 @@
 - Nhấn `P` để tạm dừng và nhấn tiếp `P` để tiếp tục chơi.
 - Số lượng màn chơi là vô hạn, qua càng nhiều màn thì map sẽ rộng dần và số lượng zombie sẽ tăng lên tương ứng với số màn.
 - Qua mỗi màn người chơi được lựa chọn nâng cấp để mạnh hơn gồm các lựa chọn:
-        + Tăng tốc độ bắn
-        + Tăng lượng đạn trong băng
-        + Tăng lượng máu cơ bản
-        + Tăng tốc độ
-        + Tăng số lượng và lượng máu hồi của vật phẩm máu
-        + Tăng số lượng và lượng đạn của vật phẩm đạn
+  + Tăng tốc độ bắn
+  + Tăng lượng đạn trong băng
+  + Tăng lượng máu cơ bản
+  + Tăng tốc độ
+  + Tăng số lượng và lượng máu hồi của vật phẩm máu
+  + Tăng số lượng và lượng đạn của vật phẩm đạn
 - Có âm thanh trong lúc chơi như tiếng đạn bắn, nạp đạn, tiếng zombie tấn công,...
 - Trò chơi kết thúc khi lượng máu của nhân vật rút về 0, người chơi lựa chọn nhấn `Enter` để chơi lại hoặc `ESC` để out game.
 
