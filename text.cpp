@@ -28,7 +28,7 @@ void text()
     pauseText.setCharacterSize(100);
     pauseText.setFillColor(Color::White);
     pauseText.setPosition(400, 400);
-    pauseText.setString("Press Enter to continue");
+    pauseText.setString("Press P to continue");
 
     // game over
     gameOverText.setFont(font);

@@ -224,7 +224,7 @@ int main()
         {
 
             // Handle the pressing and releasing of the WASD keys
-            if (Keyboard::isKeyPressed(Keyboard::W))
+            if (Keyboard::isKeyPressed(Keyboard::W) || Keyboard::isKeyPressed(Keyboard::Up))
             {
                 player.moveUp();
             }
@@ -233,7 +233,7 @@ int main()
                 player.stopUp();
             }
 
-            if (Keyboard::isKeyPressed(Keyboard::S))
+            if (Keyboard::isKeyPressed(Keyboard::S) || Keyboard::isKeyPressed(Keyboard::Down))
             {
                 player.moveDown();
             }
@@ -242,7 +242,7 @@ int main()
                 player.stopDown();
             }
 
-            if (Keyboard::isKeyPressed(Keyboard::A))
+            if (Keyboard::isKeyPressed(Keyboard::A) || Keyboard::isKeyPressed(Keyboard::Left))
             {
                 player.moveLeft();
             }
@@ -251,7 +251,7 @@ int main()
                 player.stopLeft();
             }
 
-            if (Keyboard::isKeyPressed(Keyboard::D))
+            if (Keyboard::isKeyPressed(Keyboard::D) || Keyboard::isKeyPressed(Keyboard::Right))
             {
                 player.moveRight();
             }
