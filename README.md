@@ -43,22 +43,21 @@
 - Sử dụng các biến const, con trỏ, tham chiếu.
 - Sử dụng đọc, viết file.
 - Sử dụng class, extern,...
+- Phân chia thành các file cpp, header.
 ### Với thư viện SFML
 - Load ảnh định dạng PNG, âm thanh .wav, font chữ.
 - Xử lí sự kiện chuột, bàn phím.
 - Xử dụng các hàm để xử lí va chạm nhân vật.
 
-Ngoài ra còn vận dụng chia file và quản lí các file cpp, file header.
-
 ## 5. Kết luận, hướng phát triển tựa game trong tương lai.
-### Kết luận
-Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản tuy nhiên giao diện vẫn chưa hoàn thiện, phần menu vẫn chưa được đẹp sẽ cần phải cải thiện thêm.
-### Hướng phát triển trong tương lai
+### Kết luận:
+Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản. Tuy nhiên phần menu các lựa chọn nâng cấp vẫn còn sơ sài, cơ bản cần phải cải thiện thêm.
+### Hướng phát triển trong tương lai:
 - Bổ sung thêm hệ thống menu trông đẹp hơn, dùng chuột để lựa chọn.
 - Thêm chế độ nhiều người chơi để anh em vào càn quét zombie.
 - Thêm các loại súng mới tăng sức mạnh cho nhân vật.
 - Số lượng, chủng loại zombie tăng lên.
 - Thêm skin cho nhân vật đẹp hơn.
 - ...
-### Những điều tâm đắc
-Trong quá trình làm tựa game này, em đã củng cố được việc sử dụng các thư viện, các hàm và biến trong C++, biết phân chia và quản lý các file header, cpp trong một project. Em cũng đã biết thêm việc kết hợp các thư viện, hàm của một ngôn ngữ thành một chương trình hoàn thiện, qua đó nhận thấy rằng ngôn ngữ lập trình cũng như là một thứ tiếng vậy, không phải chỉ biết rõ các từ là có thể giao tiếp được mà chúng ta cần phải biết kết hợp các từ riêng lẻ đó thành một câu hoàn chỉnh thì mới có thể giao tiếp với những người khác được. Ngoài ra em cũng đã xem rất nhiều video hướng dẫn, đọc các tài liệu, qua đó củng cố được vốn từ tiếng Anh của mình 😀😀
+### Những điều tâm đắc:
+Trong quá trình làm tựa game này, em đã củng cố được việc sử dụng các thư viện, các hàm và biến trong C++, biết phân chia và quản lý các file header, cpp trong một project. Em cũng đã biết thêm việc kết hợp các thư viện, hàm của một ngôn ngữ thành một chương trình hoàn thiện, qua đó nhận thấy rằng ngôn ngữ lập trình cũng như là một thứ tiếng vậy, không phải chỉ biết rõ các từ là có thể giao tiếp được mà chúng ta cần phải biết kết hợp các từ riêng lẻ đó thành một câu hoàn chỉnh thì mới có thể giao tiếp với những người khác được. Ngoài ra em cũng đã xem rất nhiều video hướng dẫn, đọc các tài liệu, qua đó củng cố được vốn từ tiếng Anh của mình 😛😛
