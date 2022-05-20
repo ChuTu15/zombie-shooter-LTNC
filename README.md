@@ -10,9 +10,10 @@
 
 ## 2. Mô tả chung về trò chơi, các ý tưởng chính:
 - Trò chơi là một tựa game hành động tiêu diệt xác sống (zombie), điều khiển nhân vật bằng các phím điều hướng - [UP - W], [DOWN - S], [LEFT - A], [RIGHT - D] và dùng chuột để bắn, tiêu diệt những con zombie.
-- Ý tưởng chính: + Có 3 loại zombie (bloater, chaser, crawler) với những đặc tính khác nhau đi ra từ các hướng với mục tiêu tấn công người chơi.
-                 + Mục tiêu của người chơi là di chuyển để né tránh và bắn để tiêu diệt các con zombie để ghi điểm và vượt qua các màn chơi.
-                 + Mỗi màn chơi sẽ có độ rộng của map thay đổi cũng như số lượng zombie tăng dần theo tường màn. Số màn chơi là vô hạn. Trong mỗi màn chơi cũng sẽ có những vật phẩm hỗ trợ (máu và đạn) xuất hiện bất kỳ trên map để hỗ trợ người chơi. Sau mỗi màn chơi người chơi sẽ được lựa chọn một nâng cấp để tăng sức mạnh của nhân vật.
+- Ý tưởng chính: 
+  + Có 3 loại zombie (bloater, chaser, crawler) với những đặc tính khác nhau đi ra từ các hướng với mục tiêu tấn công người chơi.
+  + Mục tiêu của người chơi là di chuyển để né tránh và bắn để tiêu diệt các con zombie để ghi điểm và vượt qua các màn chơi.
+  + Mỗi màn chơi sẽ có độ rộng của map thay đổi cũng như số lượng zombie tăng dần theo tường màn. Số màn chơi là vô hạn. Trong mỗi màn chơi cũng sẽ có những vật phẩm hỗ trợ (máu và đạn) xuất hiện bất kỳ trên map để hỗ trợ người chơi. Sau mỗi màn chơi người chơi sẽ được lựa chọn một nâng cấp để tăng sức mạnh của nhân vật.
 
 ## 3. Mô tả các chức nâng chính
 
