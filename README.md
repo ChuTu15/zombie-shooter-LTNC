@@ -16,10 +16,10 @@
   + Mỗi màn chơi sẽ có độ rộng của map thay đổi cũng như số lượng zombie tăng dần theo tường màn. Số màn chơi là vô hạn. Trong mỗi màn chơi cũng sẽ có những vật phẩm hỗ trợ (máu và đạn) xuất hiện bất kỳ trên map để hỗ trợ người chơi. Sau mỗi màn chơi người chơi sẽ được lựa chọn một nâng cấp để tăng sức mạnh của nhân vật.
 
 ## 3. Mô tả các chức nâng chính
+**Mô tả**:
 
 [Video minh hoạ](https://youtu.be/pqW69Oe9610)
 
-**Mô tả**:
 - Tại màn hình khởi chạy lên nhấn `Enter` để bắt đầu game.
 - Dùng các phím số `1`, `2`, `3`, `4`, `5`, `6` để lựa chọn nâng cấp.
 - Nhân vật có thể di chuyển qua theo các hướng, click chuột trái để bắn đạn về hướng ống ngắm.
