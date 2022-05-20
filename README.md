@@ -52,7 +52,7 @@
 
 ## 5. Kết luận, hướng phát triển tựa game trong tương lai.
 ### Kết luận:
-Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản. Tuy nhiên phần menu các lựa chọn nâng cấp vẫn còn sơ sài, cơ bản cần phải cải thiện thêm.
+Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản, đã sử dụng các thư viện của SFML và phân chia các file thành các file header và cpp. Tuy nhiên phần menu các lựa chọn nâng cấp vẫn còn sơ sài, cơ bản cần phải cải thiện thêm.
 ### Hướng phát triển trong tương lai:
 - Bổ sung thêm hệ thống menu trông đẹp hơn, dùng chuột để lựa chọn.
 - Thêm chế độ nhiều người chơi để anh em vào càn quét zombie.
