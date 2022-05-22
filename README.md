@@ -21,14 +21,13 @@
 [Video minh hoạ](https://youtu.be/pqW69Oe9610)
 
 - Tại màn hình khởi chạy lên nhấn `Enter` để bắt đầu game.
-- Dùng các phím số `1`, `2`, `3`, `4`, `5`, `6` để lựa chọn nâng cấp.
 - Nhân vật có thể di chuyển qua theo các hướng, click chuột trái để bắn đạn về hướng ống ngắm.
 - Trong màn hình chính game gồm có score (điểm), high score (điểm cao nhất), ammo (số đạn), health bar (thanh máu), wave (màn chơi hiện tại), zombie (số zombie còn sống).
 - Mỗi lần click chuột sẽ bắn 1 viên đạn, khi hết số đạn trong băng người chơi phải reload lại số đạn nếu còn đạn trên người (nhấn `R`). Một băng đạn ban đầu có tối đa 6 viên và có thể thay đổi tuỳ vào nâng cấp nhân vật.
 - Sẽ có những vật phẩm rơi ra trong lúc chơi (gồm máu và đạn), di chuyển nhân vật đến để nhặt những vật phẩm đó (bình máu để hồi máu, đạn để tăng lượng đạn đang có trên người).
 - Nhấn `P` để tạm dừng và nhấn tiếp `P` để tiếp tục chơi.
 - Số lượng màn chơi là vô hạn, qua càng nhiều màn thì map sẽ rộng dần và số lượng zombie sẽ tăng lên tương ứng với số màn.
-- Qua mỗi màn người chơi được lựa chọn nâng cấp để mạnh hơn gồm các lựa chọn:
+- Qua mỗi màn người chơi được lựa chọn nâng cấp để mạnh hơn (sử dụng chuột để chọn) gồm các lựa chọn:
   + Tăng tốc độ bắn
   + Tăng lượng đạn trong băng
   + Tăng lượng máu cơ bản
