@@ -1,9 +1,13 @@
 #ifndef TEXT_H_INCLUDED
 #define TEXT_H_INCLUDED
 
+#pragma once
+
 #include "SFML/Graphics.hpp"
 #include <sstream>
 #include <iostream>
+
+#define MAX_NUMBER_OF_ITEMS 6
 
 using namespace sf;
 
@@ -20,7 +24,10 @@ extern Text pauseText;
 extern Text gameOverText;
 
 //Leveling up
-extern Text levelUpText;
+extern Text levelUpText[MAX_NUMBER_OF_ITEMS];
+
+//pass wave
+extern Text passText;
 
 //Ammo
 extern Text ammoText;

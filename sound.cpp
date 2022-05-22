@@ -24,6 +24,7 @@ Sound pickup;
 
 SoundBuffer gameOverBuffer;
 Sound gameOver;
+
 void sound()
 {
     //hit sound

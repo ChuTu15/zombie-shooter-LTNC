@@ -1,10 +1,13 @@
 #include "header/text.h"
 
+using namespace sf;
+
 Font font;
 Text startText;
 Text pauseText;
 Text gameOverText;
-Text levelUpText;
+Text levelUpText[MAX_NUMBER_OF_ITEMS];
+Text passText;
 Text ammoText;
 Text scoreText;
 Text highScoreText;
@@ -32,26 +35,34 @@ void text()
 
     // game over
     gameOverText.setFont(font);
-    gameOverText.setCharacterSize(125);
+    gameOverText.setCharacterSize(100);
     gameOverText.setFillColor(Color::White);
     gameOverText.setPosition(250, 800);
     gameOverText.setString("Game Over! \nPress Enter to retry");
 
     //Leveling up
-    levelUpText.setFont(font);
-    levelUpText.setCharacterSize(80);
-    levelUpText.setFillColor(Color::White);
-    levelUpText.setPosition(150, 250);
-    std::stringstream levelUpstream;
-    levelUpstream <<
-        "Select update:"
-        "\n1 - Increased rate of fire" <<
-        "\n2 - Increased clip size(next reload)" <<
-        "\n3 - Increased max health" <<
-        "\n4 - Increased run speed" <<
-        "\n5 - More and better health pickups" <<
-        "\n6 - More and better ammo pickups";
-    levelUpText.setString(levelUpstream.str());
+    for (int i = 0; i < MAX_NUMBER_OF_ITEMS; i++)
+    {
+        levelUpText[i].setFont(font);
+        levelUpText[i].setCharacterSize(50);
+        levelUpText[i].setFillColor(Color::White);
+        levelUpText[i].setStyle(Text::Underlined);
+        levelUpText[i].setOutlineThickness(2.f);
+        levelUpText[i].setPosition(150, 50 * (i + 1) + 100 * i);
+    }
+    levelUpText[0].setString("\n1 - Increased rate of fire");
+    levelUpText[1].setString("\n2 - Increased clip size(next reload)");
+    levelUpText[2].setString("\n3 - Increased max health");
+    levelUpText[3].setString("\n4 - Increased run speed");
+    levelUpText[4].setString("\n5 - More and better health pickups");
+    levelUpText[5].setString("\n6 - More and better ammo pickups");
+
+    //pass wave
+    passText.setFont(font);
+    passText.setCharacterSize(100);
+    passText.setFillColor(Color::White);
+    passText.setPosition(250, 800);
+    passText.setString("Congratulation! \nPress Enter to continue");
 
 
     //Ammo
@@ -71,16 +82,12 @@ void text()
     highScoreText.setCharacterSize(55);
     highScoreText.setFillColor(Color::White);
     highScoreText.setPosition(1400, 0);
-    //std::stringstream s;
-    //s << "High Score:" << high_score;
-    //highScoreText.setString(s.str());
 
     //Zombie remaining
     zombiesRemainingText.setFont(font);
     zombiesRemainingText.setCharacterSize(55);
     zombiesRemainingText.setFillColor(Color::White);
     zombiesRemainingText.setPosition(1500, 980);
-    //zombiesRemainingText.setString("Zombies: 100");
 
     //Wave number
     waveNumberText.setFont(font);
@@ -88,3 +95,4 @@ void text()
     waveNumberText.setFillColor(Color::White);
     waveNumberText.setPosition(1250, 980);
 }
+

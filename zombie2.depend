@@ -56,7 +56,7 @@
 	"header/createBgr.h"
 	"header/zombie.h"
 
-1652938780 source:c:\users\chu quang tu\desktop\zombie-arena\main-sfml.cpp
+1653199431 source:c:\users\chu quang tu\desktop\zombie-arena\main-sfml.cpp
 	<iostream>
 	<sstream>
 	<fstream>
@@ -119,100 +119,18 @@
 	"header/player.h"
 	<iostream>
 
-1652936781 source:c:\users\chu quang tu\desktop\zombie-arena\sound.cpp
+1653198695 source:c:\users\chu quang tu\desktop\zombie-arena\sound.cpp
 	"header/sound.h"
 
-1652937654 c:\users\chu quang tu\desktop\zombie-arena\header\sound.h
+1653198695 c:\users\chu quang tu\desktop\zombie-arena\header\sound.h
 	"SFML/Audio.hpp"
 	<iostream>
 
-1652938450 source:c:\users\chu quang tu\desktop\zombie-arena\text.cpp
+1653197920 source:c:\users\chu quang tu\desktop\zombie-arena\text.cpp
 	"header/text.h"
 
-1652938448 c:\users\chu quang tu\desktop\zombie-arena\header\text.h
+1653196287 c:\users\chu quang tu\desktop\zombie-arena\header\text.h
 	"SFML/Graphics.hpp"
 	<sstream>
 	<iostream>
-
-1652092354 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\bullet.cpp
-	"header/bullet.h"
-
-1650882673 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\bullet.h
-	<SFML/Graphics.hpp>
-
-1649863604 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\createbgr.cpp
-	<SFML/Graphics.hpp>
-	"header/createBgr.h"
-
-1650726438 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\createbgr.h
-	"zombie.h"
-
-1652627367 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\zombie.h
-	<SFML/Graphics.hpp>
-
-1651510729 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\createhorde.cpp
-	"header/createBgr.h"
-	"header/zombie.h"
-
-1652938780 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\main-sfml.cpp
-	<iostream>
-	<sstream>
-	<fstream>
-	<unistd.h>
-	<SFML/Graphics.hpp>
-	<SFML/Audio.hpp>
-	"header/player.h"
-	"header/createBgr.h"
-	"header/TextureHolder.h"
-	"header/bullet.h"
-	"header/pickup.h"
-	"header/sound.h"
-	"header/text.h"
-
-1650812323 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\player.h
-	<SFML/Graphics.hpp>
-	<cmath>
-	<ctime>
-
-1650812411 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\textureholder.h
-	<SFML/Graphics.hpp>
-	<map>
-
-1651420702 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\pickup.h
-	<SFML/Graphics.hpp>
-
-1652937654 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\sound.h
-	"SFML/Audio.hpp"
-	<iostream>
-
-1652938448 c:\users\chu quang tu\desktop\zombie-shooter-ltnc\header\text.h
-	"SFML/Graphics.hpp"
-	<sstream>
-	<iostream>
-
-1651512028 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\pickup.cpp
-	"header/pickup.h"
-	"header/TextureHolder.h"
-	<iostream>
-
-1652346989 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\player.cpp
-	"header/player.h"
-	"header/TextureHolder.h"
-
-1652936781 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\sound.cpp
-	"header/sound.h"
-
-1652977720 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\text.cpp
-	"header/text.h"
-
-1650812411 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\textureholder.cpp
-	"header/TextureHolder.h"
-	<assert.h>
-
-1651676129 source:c:\users\chu quang tu\desktop\zombie-shooter-ltnc\zombie.cpp
-	"header/zombie.h"
-	"header/TextureHolder.h"
-	<ctime>
-	<cstdlib>
-	<cmath>
 

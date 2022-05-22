@@ -31,7 +31,6 @@ extern Sound pickup;
 extern SoundBuffer gameOverBuffer;
 extern Sound gameOver;
 
-
 void sound();
 
 #endif // SOUND_H_INCLUDED

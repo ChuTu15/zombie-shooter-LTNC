@@ -19,6 +19,7 @@ int main()
     enum class State {
         START,
         PAUSE,
+        PASS,
         LEVELING_UP,
         GAME_OVER,
         PLAYING
@@ -38,6 +39,9 @@ int main()
 
     // create a an view for the main action
     View mainView(sf::FloatRect(0, 0, resolution.x, resolution.y));
+
+    //create a an view for the menu update
+    View menuView(sf::FloatRect(0, 0, resolution.x, resolution.y));
 
     //clock for timing
     Clock clock;
@@ -78,10 +82,8 @@ int main()
     Time lastPressed;
 
     // crosshair
-    window.setMouseCursorVisible(false);
     Sprite spriteCrosshair;
     Texture textureCrosshair = TextureHolder::GetTexture("images/crosshair.png");
-
     spriteCrosshair.setTexture(textureCrosshair);
     spriteCrosshair.setOrigin(25, 25);
 
@@ -131,24 +133,20 @@ int main()
     //what time was the last update
     Time timeSinceLastUpdate;
     //how often (in frames) should we update the HUD
-    int fpsMeasurementFrameInterval = 100;
+    int fpsMeasurementFrameInterval = 10;
 
     sound();
 
     //the main game loop
     while (window.isOpen())
     {
-        /*
-		************
-		Handle input
-		************
-		*/
+        //Handle input
 
         // Handle events
         Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == Event::KeyPressed)
+            if (event.type == Event::KeyReleased)
             {
                 //pause the game while playing
                 if (event.key.code == Keyboard::P && state == State::PLAYING)
@@ -163,7 +161,7 @@ int main()
                     clock.restart();
                 }
 
-                //start a new game while in GAME_OVER state
+                //start a new game while in START or GAME_OVER state
                 else if (event.key.code == Keyboard::Return && (state == State::GAME_OVER || state == State::START))
                 {
                     state = State::LEVELING_UP;
@@ -177,6 +175,12 @@ int main()
                     fireRate = 1;
 
                     player.resetPlayerStats();
+                }
+
+                else if (event.key.code == Keyboard::Return && state == State::PASS)
+                {
+                    state = State::LEVELING_UP;
+                    clock.restart();
                 }
 
                 if (state == State::PLAYING)
@@ -218,6 +222,11 @@ int main()
         {
             window.close();
         }
+
+        //where is the mouse pointer
+        mouseScreen = Mouse::getPosition();
+
+
 
         //handle controlling the player
         if (state == State::PLAYING)
@@ -287,50 +296,58 @@ int main()
         // Handle the player leveling up
         if (state == State::LEVELING_UP)
         {
-            if (event.key.code == Keyboard::Num1)
+            //switch to the menu update view
+            window.setView(menuView);
+
+            //convert mouse position to world coordinates
+            mouseWorld = window.mapPixelToCoords(Mouse::getPosition(), menuView);
+
+            if (Mouse::isButtonPressed(sf::Mouse::Left) && mouseWorld.y < 160 && mouseWorld.y > 110)
             {
                 //increase fire rate
                 fireRate++;
                 state = State::PLAYING;
             }
 
-            if (event.key.code == Keyboard::Num2)
+            if (Mouse::isButtonPressed(sf::Mouse::Left) && mouseWorld.y < 310 && mouseWorld.y > 260)
             {
                 //increase clip size
                 clipSize += clipSize;
                 state = State::PLAYING;
             }
 
-            if (event.key.code == Keyboard::Num3)
+            if (Mouse::isButtonPressed(sf::Mouse::Left) && mouseWorld.y < 460 && mouseWorld.y > 410)
             {
                 //increase health
                 player.upgradeHealth();
                 state = State::PLAYING;
             }
 
-            if (event.key.code == Keyboard::Num4)
+            if (Mouse::isButtonPressed(sf::Mouse::Left) && mouseWorld.y < 610 && mouseWorld.y > 560)
             {
                 //increase speed
                 player.upgradeSpeed();
                 state = State::PLAYING;
             }
 
-            if (event.key.code == Keyboard::Num5)
+            if (Mouse::isButtonPressed(sf::Mouse::Left) && mouseWorld.y < 760 && mouseWorld.y > 710)
             {
                 //upgrade health pickup
                 healthPickup.upgrade();
                 state = State::PLAYING;
             }
 
-            if (event.key.code == Keyboard::Num6)
+            if (Mouse::isButtonPressed(sf::Mouse::Left) && mouseWorld.y < 910 && mouseWorld.y > 860)
             {
                 //upgrade ammo pickup
                 ammoPickup.upgrade();
                 state = State::PLAYING;
             }
 
+
             if (state == State::PLAYING)
             {
+
                 //increase the wave number
                 wave++;
 
@@ -367,11 +384,9 @@ int main()
 
         }// end if LEVELING_UP
 
-        /*
-		****************
-		UPDATE THE FRAME
-		****************
-		*/
+
+		//UPDATE THE FRAME
+
         if (state == State::PLAYING)
         {
             //update the delta time
@@ -380,9 +395,6 @@ int main()
             gameTimeTotal += dt;
             //make a decimal fraction of 1 from the delta time
             float dtAsSeconds = dt.asSeconds();
-
-            //where is the mouse pointer
-            mouseScreen = Mouse::getPosition();
 
             //convert mouse position to world coordinates
             mouseWorld = window.mapPixelToCoords(Mouse::getPosition(), mainView);
@@ -449,7 +461,7 @@ int main()
                                 //when all zombies are dead
                                 if (numberZombieAlive == 0)
                                 {
-                                    state = State::LEVELING_UP;
+                                    state = State::PASS;
                                 }
                             }
 
@@ -541,11 +553,7 @@ int main()
 
         } //end updating the scene
 
-        /*
-		**************
-		Draw the scene
-		**************
-		*/
+		//Draw the scene
 
         if (state == State::PLAYING)
         {
@@ -578,6 +586,7 @@ int main()
             window.draw(player.getSprite());
 
             //draw crosshair
+            window.setMouseCursorVisible(false);
             window.draw(spriteCrosshair);
 
             //draw the pickups
@@ -613,8 +622,12 @@ int main()
 
         if (state == State::LEVELING_UP)
 		{
+		    window.setMouseCursorVisible(true);
 		    window.draw(spriteScreen);
-		    window.draw(levelUpText);
+		    for (int i = 0; i < MAX_NUMBER_OF_ITEMS; i++)
+            {
+		    window.draw(levelUpText[i]);
+		    }
 		}
 
 		if (state == State::PAUSE)
@@ -622,8 +635,17 @@ int main()
 		    window.draw(pauseText);
 		}
 
+		if (state == State::PASS)
+        {
+            window.draw(spriteScreen);
+            window.draw(passText);
+            window.draw(scoreText);
+            window.draw(highScoreText);
+        }
+
 		if (state == State::GAME_OVER)
 		{
+            window.draw(spriteCrosshair);
 		    window.draw(spriteScreen);
 		    window.draw(gameOverText);
 		    window.draw(scoreText);
