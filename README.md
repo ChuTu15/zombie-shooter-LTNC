@@ -18,7 +18,7 @@
 ## 3. Mô tả các chức nâng chính
 **Mô tả**:
 
-[Video minh hoạ](https://youtu.be/pqW69Oe9610)
+[Video minh hoạ](https://youtu.be/Xb37kkl6YlE)
 
 - Tại màn hình khởi chạy lên nhấn `Enter` để bắt đầu game.
 - Nhân vật có thể di chuyển qua theo các hướng, click chuột trái để bắn đạn về hướng ống ngắm.
