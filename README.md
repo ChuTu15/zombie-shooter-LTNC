@@ -6,7 +6,7 @@
 
 ## 1. Cách lấy và chạy chương trình:
 - Bước 1: Download từ github file zip chứa toàn bộ code và thư viện, hình ảnh, âm thanh từ github hoặc dùng lệnh `git clone https://github.com/ChuTu15/zombie-shooter-LTNC.git`
-- Bước 2: Giải nén, mở project và chạy chương trình
+- Bước 2: Giải nén và tìm đến `bin\Debug\zombie2.exe` để chạy chương trình.
 
 ## 2. Mô tả chung về trò chơi, các ý tưởng chính:
 - Trò chơi là một tựa game hành động tiêu diệt xác sống (zombie), điều khiển nhân vật bằng các phím điều hướng - [UP - W], [DOWN - S], [LEFT - A], [RIGHT - D] và dùng chuột để bắn, tiêu diệt những con zombie.
@@ -61,4 +61,4 @@ Game về cơ bản đã tương dối hoàn thiện các chức năng cơ bản
 - Thêm skin cho nhân vật đẹp hơn.
 - ...
 ### Những điều tâm đắc:
-Trong quá trình làm tựa game này, em đã củng cố được việc sử dụng các thư viện, các hàm và biến trong C++, biết phân chia và quản lý các file header, cpp trong một project. Em cũng đã biết thêm việc kết hợp các thư viện, hàm của một ngôn ngữ thành một chương trình hoàn thiện, qua đó nhận thấy rằng ngôn ngữ lập trình cũng như là một thứ tiếng vậy, không phải chỉ biết rõ các từ là có thể giao tiếp được mà chúng ta cần phải biết kết hợp các từ riêng lẻ đó thành một câu hoàn chỉnh thì mới có thể giao tiếp với những người khác được. Ngoài ra em cũng đã xem rất nhiều video hướng dẫn, đọc các tài liệu, qua đó củng cố được vốn từ tiếng Anh của mình 😛😛. Chính những bài tập lớn như này đã giúp em cải thiện và rèn luyện thêm rất nhiều những kỹ năng lập trình và em cũng hi vọng trong tương lai sẽ được các thầy cô học tập thêm những kỹ năng mới trên con đường trở thành lập trình viên chuyên nghiệp.
+Trong quá trình làm tựa game này, em đã củng cố được việc sử dụng các thư viện ngoài, các hàm và biến trong C++, biết phân chia và quản lý các file header, cpp trong một project. Ngoài ra em cũng đã xem rất nhiều video hướng dẫn, đọc các tài liệu, qua đó củng cố được vốn từ tiếng Anh của mình 😛😛. Chính những bài tập lớn như này đã giúp em cải thiện và rèn luyện thêm rất nhiều những kỹ năng lập trình và em cũng hi vọng trong tương lai sẽ được các thầy cô học tập thêm những kỹ năng mới trên con đường trở thành lập trình viên chuyên nghiệp.
