@@ -6,7 +6,7 @@
 
 ## 1. Cách lấy và chạy chương trình:
 - Bước 1: Download từ github file zip chứa toàn bộ code và thư viện, hình ảnh, âm thanh từ github hoặc dùng lệnh `git clone https://github.com/ChuTu15/zombie-shooter-LTNC.git`
-- Bước 2: Giải nén và tìm đến file `zombie2.exe` để chạy chương trình
+- Bước 2: Giải nén và tìm đến `bin\Debug\zombie2.exe` để chạy chương trình.
 
 ## 2. Mô tả chung về trò chơi, các ý tưởng chính:
 - Trò chơi là một tựa game hành động tiêu diệt xác sống (zombie), điều khiển nhân vật bằng các phím điều hướng - [UP - W], [DOWN - S], [LEFT - A], [RIGHT - D] và dùng chuột để bắn, tiêu diệt những con zombie.
